@@ -3,5 +3,5 @@ import App from "./App.vue";
 import router from "./router";
 
 import "bootstrap/dist/js/bootstrap";
-import "bootstrap/dist/css/bootstrap.css";
+import "./sass/main.scss";
 createApp(App).use(router).mount("#app");
