@@ -15,7 +15,11 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse ms-auto" style="justify-content: end" id="navbarNavAltMarkup">
+      <div
+        class="collapse navbar-collapse ms-auto"
+        style="justify-content: end"
+        id="navbarNavAltMarkup"
+      >
         <div class="navbar-nav">
           <router-link to="/cv" class="nav-link">Vita</router-link>
           <router-link to="/services" class="nav-link">Services</router-link>
