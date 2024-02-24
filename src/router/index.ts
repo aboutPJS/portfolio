@@ -8,28 +8,40 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component: HomeView
   },
   {
     path: "/services",
     name: "services",
-    component: ServiceView,
+    component: ServiceView
   },
   {
     path: "/work",
     name: "work",
-    component: WorkView,
+    component: WorkView
   },
   {
     path: "/cv",
     name: "cv",
-    component: CVView,
-  },
+    component: CVView
+  }
 ];
 
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
+
+    if (to.query && to.query.id) {
+      return {
+        el: document.getElementById(to.query.id.toString()),
+        top: 10,
+      };
+    }
+  }
 });
 
 export default router;

@@ -1,5 +1,5 @@
 <template>
-  <h3>{{ entry.title }}</h3>
+  <h5>{{ entry.title }}</h5>
   <p>{{ entry.description }}</p>
 </template>
 
@@ -9,6 +9,4 @@ import { Entry } from "@/models/vita";
 const props = defineProps<{
   entry: Entry;
 }>();
-
-console.log(props.entry);
 </script>

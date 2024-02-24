@@ -1,5 +1,5 @@
 <template>
-  <h3>{{ props.section.title }}</h3>
+  <h3 :id="props.id">{{ props.section.title }}</h3>
   <div v-for="entry in props.section.entries">
     <EntryCard :entry="entry"></EntryCard>
   </div>
@@ -11,5 +11,6 @@ import EntryCard from "@/components/EntryCard.vue";
 
 const props = defineProps<{
   section: Section;
+  id: number;
 }>();
 </script>

@@ -1,3 +1,5 @@
-<template>Services</template>
+<template>
+  Services
+</template>
 
 <script lang="ts" setup></script>
