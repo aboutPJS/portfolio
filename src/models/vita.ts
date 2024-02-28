@@ -5,7 +5,10 @@ export type Section = {
 
 export type Entry = {
   title: string;
+  company: string;
   description: string;
+  startDate: string;
+  endDate?: string;
   link?: string;
-  cover?: string;
-}
+  pictures?: Array<string>;
+};

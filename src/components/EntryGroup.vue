@@ -1,7 +1,11 @@
 <template>
-  <h3 :id="props.id">{{ props.section.title }}</h3>
-  <div v-for="entry in props.section.entries">
-    <EntryCard :entry="entry"></EntryCard>
+  <div class="entry-container">
+    <div class="title" :id="props.id">
+      {{ props.section.title.toUpperCase() }}
+    </div>
+    <div v-for="(entry, index) in props.section.entries">
+      <EntryCard :entry="entry" :index="index + '-' + props.id"></EntryCard>
+    </div>
   </div>
 </template>
 
@@ -14,3 +18,17 @@ const props = defineProps<{
   id: number;
 }>();
 </script>
+
+<style>
+.title {
+  font-weight: bold;
+  font-size: calc(var(--bs-body-font-size) * 6);
+  text-align: right;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.entry-container {
+  padding-bottom: 5rem;
+}
+</style>
