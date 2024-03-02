@@ -7,8 +7,14 @@ export type Entry = {
   title: string;
   company: string;
   description: string;
+  skills?: Array<string>;
   startDate: string;
   endDate?: string;
-  link?: string;
+  links?: Array<Link>;
   pictures?: Array<string>;
+};
+
+export type Link = {
+  name: string,
+  url: string,
 };

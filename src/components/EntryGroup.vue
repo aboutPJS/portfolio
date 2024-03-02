@@ -1,6 +1,6 @@
 <template>
   <div class="entry-container">
-    <div class="title" :id="props.id">
+    <div class="section-title" :id="props.id">
       {{ props.section.title.toUpperCase() }}
     </div>
     <div v-for="(entry, index) in props.section.entries">
@@ -20,13 +20,9 @@ const props = defineProps<{
 </script>
 
 <style>
-.title {
-  font-weight: bold;
-  font-size: calc(var(--bs-body-font-size) * 6);
-  text-align: right;
-  padding-bottom: 2rem;
-  padding-top: 1rem;
-}
+
+
+
 
 .entry-container {
   padding-bottom: 5rem;

@@ -1,5 +1,7 @@
 <template>
-  <NavBar />
+  <div class="sticky-navbar">
+    <NavBar />
+  </div>
   <div class="content">
     <router-view />
   </div>
@@ -8,11 +10,12 @@
 <script setup lang="ts">
 import NavBar from "@/components/NavBar.vue";
 </script>
-
 <style>
-.content {
-  padding-left: 5rem;
-  padding-right: 5rem;
-  /*padding: var(--bs-navbar-padding-x);*/
+.sticky-navbar {
+  background: rgba(255, 255, 255);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 </style>

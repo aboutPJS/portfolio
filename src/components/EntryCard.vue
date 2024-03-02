@@ -26,10 +26,60 @@
         :data-bs-parent="'#accordion-' + index"
       >
         <div class="accordion-body">
-          <div class="row">
-            <div class="col-md-2">Description</div>
+          <hr class="m-0" style="opacity: 100%" />
+          <div class="row pb-3">
             <div class="col-md">
-              {{ props.entry.description }}
+              <div class="row">
+                <div
+                  :class="{
+                    'col-md-2': !entry.pictures,
+                    'col-md-3': entry.pictures,
+                  }"
+                >
+                  Description
+                </div>
+                <div class="col-md" style="text-align: justify;">
+                  {{ props.entry.description }}
+                </div>
+              </div>
+              <div v-if="entry.skills" class="row mt-3">
+                <div
+                  :class="{
+                    'col-md-2': !entry.pictures,
+                    'col-md-3': entry.pictures,
+                  }"
+                >
+                  Skills
+                </div>
+                <div class="col-md">
+                  <div class="row">
+                    <div class="col-md-4" v-for="skills in props.entry.skills">
+                      <li>
+                        {{ skills }}
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div v-if="entry.links" class="row mt-3">
+                <div
+                  :class="{
+                    'col-md-2': !entry.pictures,
+                    'col-md-3': entry.pictures,
+                  }"
+                >
+                  Resources
+                </div>
+                <div class="col-md">
+                  <div class="row">
+                    <div class="col-md-4" v-for="link in props.entry.links">
+                      <a :href="link.url">
+                        {{ link.name }}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-4" v-if="props.entry.pictures">
               <div id="carouselExample" class="carousel slide">

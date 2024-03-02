@@ -2,19 +2,21 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-2 col-xs-12 d-flex justify-content-start">
-        <aside>
-          <span class="section-title">{{ props.title.toUpperCase() }}</span>
-          <div>
-            <router-link
-              :to="{ query: { id: index } }"
-              :class="{ active: index == currentSection }"
-              v-for="(section, index) in props.sections"
-              :key="section"
-            >
-              {{ section.title.toUpperCase() }}
-            </router-link>
+        <aside class="w-100">
+          <div style="display: flex; align-items: flex-end">
+            <div class="m-4">
+              <router-link
+                :to="{ query: { id: index } }"
+                :class="{ active: index == currentSection }"
+                v-for="(section, index) in props.sections"
+                :key="section"
+              >
+                {{ section.title.toUpperCase() }}
+              </router-link>
+            </div>
           </div>
         </aside>
+
       </div>
 
       <div class="col-md-10 col-xs-12">
@@ -50,10 +52,10 @@ onMounted(() => {
       });
     },
     {
-      rootMargin: "0px 0px -90% 0px",
+      rootMargin: "0px 0px -90% 0px"
     }
   );
-  document.querySelectorAll("div.title").forEach((section) => {
+  document.querySelectorAll("div.section-title").forEach((section) => {
     observer.observe(section);
   });
 });
@@ -61,11 +63,15 @@ onMounted(() => {
 
 <style>
 aside > div {
+  /*border: 2px solid blue;*/
+  background: red;
+  width: 100%;
+  height: 80vh;
   position: sticky;
-  top: 20px;
+  top: 100px;
 }
 
-aside > div > a {
+aside > div > div > a {
   color: black;
   display: block;
   text-decoration: none;
@@ -79,8 +85,4 @@ aside a.active {
   font-size: calc(var(--bs-body-font-size) * 2);
 }
 
-.section-title {
-  font-style: italic;
-  color: var(--bs-primary);
-}
 </style>
