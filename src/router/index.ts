@@ -1,4 +1,9 @@
-import { createRouter, createWebHashHistory, createWebHistory, RouteRecordRaw } from "vue-router";
+import {
+  createRouter,
+  createWebHashHistory,
+  createWebHistory,
+  RouteRecordRaw,
+} from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ServiceView from "@/views/ServiceView.vue";
 import WorkView from "@/views/WorkView.vue";

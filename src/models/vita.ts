@@ -15,6 +15,6 @@ export type Entry = {
 };
 
 export type Link = {
-  name: string,
-  url: string,
+  name: string;
+  url: string;
 };

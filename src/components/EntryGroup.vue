@@ -20,10 +20,6 @@ const props = defineProps<{
 </script>
 
 <style>
-
-
-
-
 .entry-container {
   padding-bottom: 5rem;
 }

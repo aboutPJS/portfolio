@@ -38,7 +38,7 @@
                 >
                   Description
                 </div>
-                <div class="col-md" style="text-align: justify;">
+                <div class="col-md" style="text-align: justify">
                   {{ props.entry.description }}
                 </div>
               </div>

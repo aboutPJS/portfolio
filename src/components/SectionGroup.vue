@@ -7,10 +7,7 @@
             <div class="vertical-text">
               {{ title }}
             </div>
-            <div
-              class="m-4 p-2 mt-auto"
-              :style="{ background: color }"
-            >
+            <div class="m-4 p-2 mt-auto" :style="{ background: color }">
               <router-link
                 :to="{ query: { id: index } }"
                 :class="{ active: index == currentSection }"
@@ -57,7 +54,7 @@ onMounted(() => {
       });
     },
     {
-      rootMargin: "0px 0px -90% 0px"
+      rootMargin: "0px 0px -90% 0px",
     }
   );
   document.querySelectorAll("div.section-title").forEach((section) => {
