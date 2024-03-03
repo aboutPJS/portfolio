@@ -4,7 +4,7 @@
       <div class="col-md-2 col-xs-12 d-flex">
         <aside class="w-100">
           <div :style="{ background: color }" class="d-flex flex-column">
-            <div class="vertical-text">
+            <div class="vertical-text mt-4">
               {{ title }}
             </div>
             <div class="m-4 p-2 mt-auto" :style="{ background: color }">
