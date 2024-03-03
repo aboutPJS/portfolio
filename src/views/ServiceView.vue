@@ -1,9 +1,12 @@
 <template>
-  <SectionGroup :sections="services" title="Services"></SectionGroup>
+  <SectionGroup
+    :sections="services"
+    title="Services"
+    color="var(--bs-red)"
+  ></SectionGroup>
 </template>
 
 <script lang="ts" setup>
-import { services as servicesData } from "@/data/Services";
+import { services } from "@/data/Services";
 import SectionGroup from "@/components/SectionGroup.vue";
-const services = servicesData;
 </script>

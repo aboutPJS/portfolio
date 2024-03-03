@@ -1,6 +1,6 @@
 import { Section } from "@/models/vita";
 
-export const services: Array<Section> = [
+export const works: Array<Section> = [
   {
     title: "Education",
     entries: [

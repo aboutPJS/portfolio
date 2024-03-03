@@ -12,7 +12,7 @@ import NavBar from "@/components/NavBar.vue";
 </script>
 <style>
 .sticky-navbar {
-  background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255, 255);
   position: sticky;
   top: 0;
   z-index: 1000;

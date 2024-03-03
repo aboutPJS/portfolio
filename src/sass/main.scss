@@ -1,4 +1,7 @@
-$primary: blue;
+$primary: #21409a;
+$blue: #21409a;
+$red: #be1e2d;
+$yellow: #ffde17;
 $navbar-brand-font-size: 1rem;
 $nav-link-font-weight: normal;
 $navbar-padding-x: 5rem;
@@ -57,5 +60,12 @@ $accordion-body-padding-y: 0;
   .content {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  aside a {
+    font-weight: bold;
+    border-color: black;
+    line-height: 2rem !important;
+    font-size: calc(var(--bs-body-font-size) * 2);
   }
 }

@@ -1,10 +1,16 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 col-xs-12 d-flex justify-content-start">
+      <div class="col-md-2 col-xs-12 d-flex">
         <aside class="w-100">
-          <div style="display: flex; align-items: flex-end">
-            <div class="m-4">
+          <div :style="{ background: color }" class="d-flex flex-column">
+            <div class="vertical-text">
+              {{ title }}
+            </div>
+            <div
+              class="m-4 p-2 mt-auto"
+              :style="{ background: color }"
+            >
               <router-link
                 :to="{ query: { id: index } }"
                 :class="{ active: index == currentSection }"
@@ -16,9 +22,7 @@
             </div>
           </div>
         </aside>
-
       </div>
-
       <div class="col-md-10 col-xs-12">
         <EntryGroup
           v-for="(section, index) in props.sections"
@@ -39,6 +43,7 @@ import { Section } from "@/models/vita";
 const props = defineProps<{
   title: string;
   sections: Array<Section>;
+  color: string;
 }>();
 const currentSection = ref("");
 
@@ -64,7 +69,7 @@ onMounted(() => {
 <style>
 aside > div {
   /*border: 2px solid blue;*/
-  background: red;
+  display: flex;
   width: 100%;
   height: 80vh;
   position: sticky;
@@ -85,4 +90,12 @@ aside a.active {
   font-size: calc(var(--bs-body-font-size) * 2);
 }
 
+.vertical-text {
+  z-index: -1;
+  position: absolute;
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  color: white;
+  font-size: 15vh;
+}
 </style>
