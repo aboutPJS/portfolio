@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 col-xs-12 d-flex">
+      <div class="col-lg-2 col-xs-12 d-flex z-0">
         <aside class="w-100">
           <div :style="{ background: color }" class="d-flex flex-column">
             <div class="vertical-text mt-4">
@@ -20,7 +20,7 @@
           </div>
         </aside>
       </div>
-      <div class="col-md-10 col-xs-12">
+      <div class="col-lg-10 col-xs-12 z-1">
         <EntryGroup
           v-for="(section, index) in props.sections"
           :section="section"
@@ -94,5 +94,6 @@ aside a.active {
   font-weight: bold;
   color: white;
   font-size: 15vh;
+  line-height: 70%;
 }
 </style>
