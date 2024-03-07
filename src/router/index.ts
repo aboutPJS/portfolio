@@ -8,23 +8,23 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: HomeView
+    component: HomeView,
   },
   {
     path: "/services",
     name: "services",
-    component: ServiceView
+    component: ServiceView,
   },
   {
     path: "/work",
     name: "work",
-    component: WorkView
+    component: WorkView,
   },
   {
     path: "/cv",
     name: "cv",
-    component: CVView
-  }
+    component: CVView,
+  },
 ];
 
 const router = createRouter({
@@ -38,10 +38,10 @@ const router = createRouter({
     if (to.query && to.query.id) {
       return {
         el: document.getElementById(to.query.id.toString()),
-        top: 10
+        top: 10,
       };
     }
-  }
+  },
 });
 
 export default router;

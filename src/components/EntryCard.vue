@@ -38,9 +38,11 @@
                 >
                   Description
                 </div>
-                <div class="col-md" style="text-align: justify">
-                  {{ props.entry.description }}
-                </div>
+                <div
+                  class="col-md"
+                  style="text-align: justify"
+                  v-html="props.entry.description"
+                ></div>
               </div>
               <div v-if="entry.skills" class="row mt-3">
                 <div
@@ -85,12 +87,16 @@
               <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div
-                    v-for="(image, index) in props.entry.pictures"
+                    v-for="(imagePath, index) in props.entry.pictures"
                     :key="index"
                     :class="{ 'carousel-item': true, active: index === 0 }"
                   >
                     <img
-                      :src="image"
+                      :src="
+                        imagePath.startsWith(`http`)
+                          ? imagePath
+                          : require(`@/assets/${imagePath}`)
+                      "
                       class="d-block w-100"
                       :alt="'Slide ' + (index + 1)"
                     />
