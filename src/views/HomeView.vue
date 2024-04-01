@@ -12,20 +12,7 @@
           </div>
           <div class="col-md-6">
             <h1>Hello! 👋</h1>
-            <p>
-              I'm Paul, a
-              <mark>multi-disciplinary</mark>
-              creator of
-              <mark>user-centered digital services</mark>
-              . With a background spanning service design, business, and
-              full-stack development, I comprehensive support across
-              <mark>every stage of digital product and service creation</mark>.
-            </p>
-            <p class="link">
-              <router-link to="/services">
-                Find out how we can work together.
-              </router-link>
-            </p>
+            <p v-html="welcomeText"></p>
           </div>
         </div>
       </div>
@@ -33,7 +20,9 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { welcomeText } from "@/data/Welcome";
+</script>
 
 <style>
 .link {

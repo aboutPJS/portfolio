@@ -84,7 +84,7 @@ aside a.active {
   font-weight: bold;
   border-color: black;
   line-height: 4rem;
-  font-size: calc(var(--bs-body-font-size) * 2);
+  font-size: calc(var(--bs-body-font-size) * 1.5);
 }
 
 .vertical-text {
