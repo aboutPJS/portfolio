@@ -75,7 +75,7 @@
                 <div class="col-md">
                   <div class="row">
                     <div class="col-md-4" v-for="link in props.entry.links">
-                      <a :href="link.url">
+                      <a :href="getUrl(link.url)">
                         {{ link.name }}
                       </a>
                     </div>
@@ -92,11 +92,7 @@
                     :class="{ 'carousel-item': true, active: index === 0 }"
                   >
                     <img
-                      :src="
-                        imagePath.startsWith(`http`)
-                          ? imagePath
-                          : require(`@/assets/${imagePath}`)
-                      "
+                      :src="getUrl(imagePath)"
                       class="d-block w-100"
                       :alt="'Slide ' + (index + 1)"
                     />
@@ -142,6 +138,9 @@ const props = defineProps<{
   entry: Entry;
   index: string;
 }>();
+
+const getUrl = (imagePath: string) =>
+  imagePath.startsWith(`http`) ? imagePath : require(`@/assets/${imagePath}`);
 </script>
 
 <style></style>

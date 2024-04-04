@@ -25,14 +25,18 @@ export const cv: Array<Section> = [
             url: "https://www.streamways.com",
           },
         ],
-        pictures: ["streamways-logo.png"],
+        pictures: [
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/streamways-logo.png",
+        ],
       },
       {
         title: "Full Stack Developer",
         company: "Lufthansa Technik",
         startDate: "2022",
         endDate: "2024",
-        pictures: ["lufthansa-technik-logo.png"],
+        pictures: [
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/lufthansa-technik-logo.png",
+        ],
         description: `
           <div class="col-md" style="text-align: justify">
     For the past two years, I've been working as a Full Stack Developer at Lufthansa Technik's AVIATAR, contributing to the digitalisation of the aviation industry, especially in the MRO (Maintenance, Repair, Overhaul) sector. In this role, I was responsible for the operation and development of various applications on the AVIATAR platform within an agile DevOps team.
@@ -92,7 +96,9 @@ export const cv: Array<Section> = [
           "Agile Project Management",
           "Office 365",
         ],
-        pictures: ["lufthansa-industry-solutions-logo.png"],
+        pictures: [
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/lufthansa-industry-solutions-logo.png",
+        ],
         links: [
           {
             name: "Lufthansa Industry Solutions",
@@ -128,7 +134,9 @@ export const cv: Array<Section> = [
           "System Design",
           "User Experience Design",
         ],
-        pictures: ["aalborg-university-logo.png"],
+        pictures: [
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/aalborg-university-logo.png",
+        ],
       },
       {
         title: "Semester abroad",
@@ -149,7 +157,9 @@ export const cv: Array<Section> = [
             url: "https://www.rtu.lv/en",
           },
         ],
-        pictures: ["rtu.png"],
+        pictures: [
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/rtu.png",
+        ],
       },
       {
         title: "Computer Science and Business Management (B.Sc.)",
@@ -207,7 +217,9 @@ export const cv: Array<Section> = [
             url: "https://www.healthyego.studio",
           },
         ],
-        pictures: ["healthy-ego/he-logo.png"],
+        pictures: [
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/he-logo.png",
+        ],
       },
     ],
   },
