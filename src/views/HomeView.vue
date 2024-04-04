@@ -5,7 +5,7 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6">
             <img
-              src="@/assets/Profile.png"
+              src="https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/Profile.png"
               class="img-fluid"
               alt="Paul Jacob Schlenzig"
             />
