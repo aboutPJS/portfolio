@@ -1,7 +1,66 @@
 import { Section } from "@/models/vita";
 
 export const works: Array<Section> = [
-
+  {
+    title: "2025",
+    entries: [
+      {
+        title: "Intelligent Documentation - Agentic Search in Service Design",
+        company: "Master Thesis",
+        startDate: "2025",
+        endDate: "",
+        description: `
+        Whiteboard-based tools such as Miro and FigJam are widely
+used by service designers to document their processes. While valued for
+their collaborative and visual strengths, these tools often result in frag-
+mented, inconsistent, and difficult-to-retrieve documentation. This thesis
+investigates how documentation practices in service design might be im-
+proved by introducing intelligent, AI-powered retrieval systems.
+The research sets out two objectives: (1) to enable service designers to
+document their work in a way that large language models (LLMs) can
+process effectively, and (2) to apply an LLM to support natural language
+querying of that documentation. Following a Research through Design
+approach, the study combines user research (survey, workshop, inter-
+view), scenario-based design, and trend analysis to understand current
+practices and explore future directions. These insights informed the de-
+velopment of a proof of concept framework, FLUID, which was evaluated
+through a limited user test.
+Key findings highlight the fragmented and unsustainable nature of cur-
+rent documentation ecosystems, a strong recognition of pain points among
+designers, and a general openness to change. The test demonstrated the
+technical feasibility of AI-enhanced documentation but also revealed us-
+ability and onboarding challenges.
+The thesis concludes that while structured input is essential for effect-
+ive LLM-powered retrieval, tools like FLUID must align with design-
+ers’ realities to gain traction. It also emphasizes the need for accessible
+onboarding and reflects on the trade-off between offering FLUID as a
+simplified service and using it to foster technical literacy among service
+designers. Ultimately, the work positions intelligent documentation not
+only as a technical upgrade but as an opportunity to empower designers
+in an AI-driven future.
+        `,
+        skills: [
+          "Service Design",
+          "Design Documentation",
+          "Structured Knowledge Capture",
+          "Knowledge Management",
+          "Large Language Models (LLMs)",
+          "AI-Based Knowledge Retrieval",
+          "Research through Design",
+          "Human-AI Interaction"
+        ],
+        links: [
+          {
+            name: "Master Thesis",
+            url: "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2025/thesis/MA-SSD-Paul_Schlenzig-Intelligent_Documentation-Agentic_Search_in_Service_Design.pdf"
+          },
+          {
+            name: "Master Thesis Pitch",
+            url: "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2025/thesis/FLUID%20-%20Pitch.pdf"
+          }
+        ]
+      }
+  },
   {
     title: "2024",
     entries: [
@@ -31,7 +90,7 @@ export const works: Array<Section> = [
           },
           {
             name: "Letter of Recommendation",
-            url: "https://github.com/aboutPJS/assets/blob/4edb01bdf3678a68df8a8c66b22309f38858d8d2/portfolio/work/2024/Streamways/LoR.pdf"
+            url: "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2024/Streamways/LoR.pdf"
           }
         ]
       },
@@ -59,8 +118,8 @@ Our project is currently ongoing, and we will continue to update this post with 
           "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2024/IKEA/ikea-advertising.png",
           "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2024/IKEA/service-safari.png",
           "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2024/IKEA/workshop.png",
-          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2024/IKEA/game-of-life-safari.png",
-        ],
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2024/IKEA/game-of-life-safari.png"
+        ]
       },
       {
         title: "UX Design",
@@ -84,7 +143,7 @@ Our project is currently ongoing, and we will continue to update this post with 
         }],
         pictures: [
           "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2024/healthyego/image1.png",
-          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2024/healthyego/image2.png",
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2024/healthyego/image2.png"
         ]
       },
       {
@@ -112,9 +171,9 @@ Our project is currently ongoing, and we will continue to update this post with 
           "Full Stack Development"
         ],
         pictures: [
-          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png",
-        ],
-      },
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png"
+        ]
+      }
   },
   {
     title: "2023",
@@ -150,8 +209,8 @@ Our project is currently ongoing, and we will continue to update this post with 
           "Architecture"
         ],
         pictures: [
-          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png",
-        ],
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png"
+        ]
       },
       {
         title: "Service Design",
@@ -176,8 +235,8 @@ Our project is currently ongoing, and we will continue to update this post with 
           "Latex"
         ],
         pictures: [
-          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png",
-        ],
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png"
+        ]
       }
   },
   {
@@ -214,8 +273,8 @@ Our project is currently ongoing, and we will continue to update this post with 
           "Jira"
         ],
         pictures: [
-          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png",
-        ],
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png"
+        ]
       },
       {
         title: "Computational Modelling",
@@ -246,8 +305,8 @@ Our project is currently ongoing, and we will continue to update this post with 
           "Interviews"
         ],
         pictures: [
-          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2022/thesis/BA-Thesis.png",
-        ],
+          "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2022/thesis/BA-Thesis.png"
+        ]
       }
   }
 ];
