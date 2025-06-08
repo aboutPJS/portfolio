@@ -1,9 +1,40 @@
 import { Section } from "@/models/vita";
 
 export const works: Array<Section> = [
+
   {
     title: "2024",
     entries: [
+      {
+        title: "Service Design Internship",
+        company: "Streamways",
+        description: `
+        As part of my Master’s internship at Streamways, I led the requirements and concept phase for adapting their 
+        ERP system to the Finnish market. Over 90 days, I facilitated participatory design sprints, 
+        ran workshops with stakeholders, and mapped the gap between the existing software and local requirements. 
+        I translated the outcomes into detailed user stories and co-led the estimation process, 
+        laying the groundwork for the next months of development.`,
+        skills: [
+          "Service Design",
+          "Workshop Facilitation",
+          "Requirement Engineering",
+          "Figma",
+          "Agile Methodology",
+          "User Story Writing"
+        ],
+        startDate: "2024",
+        endDate: "",
+        links: [
+          {
+            name: "Streamways",
+            url: "https://www.streamways.com"
+          },
+          {
+            name: "Letter of Recommendation",
+            url: "https://github.com/aboutPJS/assets/blob/4edb01bdf3678a68df8a8c66b22309f38858d8d2/portfolio/work/2024/Streamways/LoR.pdf"
+          }
+        ]
+      },
       {
         title: "Service Design",
         company: "IKEA",
@@ -219,99 +250,4 @@ Our project is currently ongoing, and we will continue to update this post with 
         ],
       }
   }
-  // {
-  //   title: "2021",
-  //   entries: [
-  //     {
-  //       title: "Brand Design",
-  //       company: "Van der Raum",
-  //       startDate: "2021",
-  //       endDate: "",
-  //       description: "Talk a bit about the work for HE",
-  //       skills: [],
-  //       links: [],
-  //       pictures: []
-  //     },
-  //     {
-  //       title: "UI Design",
-  //       company: "Lufthansa Technik",
-  //       startDate: "2021",
-  //       endDate: "",
-  //       description: "Development of a concept for a distribution platform",
-  //       skills: [],
-  //       links: [],
-  //       pictures: []
-  //     }]
-  // },
-  // {
-  //   title: "2020",
-  //   entries: [
-  //     {
-  //       title: "Research on Employee Satisfaction",
-  //       company: "Lufthansa Technik",
-  //       startDate: "2020",
-  //       endDate: "",
-  //       description: "Talk a bit about the work for HE"
-  //       skills: [],
-  //       links: [],
-  //       pictures: []
-  //     },
-  //     {
-  //       title: "Contribution to Design System",
-  //       company: "Lufthansa Technik",
-  //       startDate: "2020",
-  //       endDate: "",
-  //       description: "I contributed to the development of a design system for LHT"
-  //       skills: [],
-  //       links: [],
-  //       pictures: []
-  //     }
-  // },
-  // {
-  //   title: "2019",
-  //   entries: [
-  //     {
-  //       title: "Data Visualisation Style Guide",
-  //       company: "Lufthansa Global Business Services",
-  //       startDate: "2019",
-  //       endDate: "",
-  //       description: "Research Paper on <i>Guidance for creating uniform reporting and the relevance of reporting standards for productivity in globally operating companies</i>"
-  //       skills: ["Tableau"],
-  //       links: [],
-  //       pictures: []
-  //     },
-  //     {
-  //       title: "Market Research on Apple Pay",
-  //       company: "",
-  //       startDate: "2019",
-  //       endDate: "",
-  //       description: "Research Paper on <i>Die Entwicklung von dem mobilen Bezahlsys-\n" +
-  //         "tem Apple Pay auf dem deutschen Markt</i>"
-  //       links: [],
-  //       pictures: []
-  //     },
-  //     {
-  //       title: "Technology Scouting on 5G",
-  //       company: "Lufthansa Technik",
-  //       startDate: "2019",
-  //       endDate: "",
-  //       description: "Supporting LHT department establishing a technology scouting processes and "
-  //       links: [],
-  //       pictures: []
-  //     }
-  // },
-  // {
-  //   title: "2018",
-  //   entries: [
-  //     {
-  //       title: "Brand Design",
-  //       company: "HEALTHY EGO",
-  //       startDate: "2018",
-  //       endDate: "",
-  //       description: "Talk a bit about the work for HE"
-  //       skills: [],
-  //       links: [],
-  //       pictures: []
-  //     }
-  // }
 ];
