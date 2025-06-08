@@ -55,8 +55,12 @@ in an AI-driven future.
             url: "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2025/thesis/MA-SSD-Paul_Schlenzig-Intelligent_Documentation-Agentic_Search_in_Service_Design.pdf"
           },
           {
-            name: "Master Thesis Pitch",
+            name: "Master Thesis Pitch (PDF)",
             url: "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2025/thesis/FLUID%20-%20Pitch.pdf"
+          },
+          {
+            name: "Master Thesis Pitch (website)",
+            url: "https://aboutpjs.github.io/FLUID/"
           }
         ]
       }
