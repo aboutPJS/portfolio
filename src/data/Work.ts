@@ -64,6 +64,7 @@ in an AI-driven future.
           }
         ]
       }
+    ]
   },
   {
     title: "2024",
@@ -178,6 +179,7 @@ Our project is currently ongoing, and we will continue to update this post with 
           "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png"
         ]
       }
+    ]
   },
   {
     title: "2023",
@@ -242,6 +244,7 @@ Our project is currently ongoing, and we will continue to update this post with 
           "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/shared/placeholder.png"
         ]
       }
+    ]
   },
   {
     title: "2022",
@@ -312,5 +315,6 @@ Our project is currently ongoing, and we will continue to update this post with 
           "https://raw.githubusercontent.com/aboutPJS/assets/main/portfolio/work/2022/thesis/BA-Thesis.png"
         ]
       }
+    ]
   }
 ];
